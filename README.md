@@ -11,3 +11,56 @@ O Gerenciador de Contas é uma aplicação simples desenvolvida em Java para aju
 <li><strong>Excluir Contas</strong>: Remova contas que não são mais necessárias.</li>
 <li><strong>Calcular Saldo Total</strong>: Calcule o saldo total das contas cadastradas.</li>
 </ul>
+
+<h3>UML do projeto</h3>
+
++--------------------------------+
+|           Inventario           |
++--------------------------------+
+| - produtos: List<Produto>      |
++--------------------------------+
+| - reescreveId(): int                       |
+| + adicionarProduto(produto: Produto): void |
+| + removerProduto(produtoId: int): void     |
+| + listarProdutos(): void                   |
+| + buscarProduto(produtoId: int): Produto   |
+| + calcularValorTotal(): double             |
++--------------------------------+
+
+                    |
+                    |
+                    |
+                    ▼
+
++--------------------------------+
+|            Produto             |
++--------------------------------+
+| - id: int                      |
+| - nome: String                 |
+| - preco: double                |
+| - quantidade: int              |
++--------------------------------+
+| + getId(): int                 |
+| + getNome(): String            |
+| + getPreco(): double           |
+| + getQuantidade(): int         |
+| + setId(id: int): void         |
+| + setQuantidade(quantidade: int): void |
+| + calcularValorTotal(): double |
++--------------------------------+
+
+                    |
+                    |
+                    |
+                    ▼
+
++--------------------------------+
+|           Categoria            |
++--------------------------------+
+| - nome: String                 |
+| - descricao: String            |
++--------------------------------+
+| + getNome(): String            |
+| + getDescricao(): String       |
+| + setDescricao(descricao: String): void |
++--------------------------------+
