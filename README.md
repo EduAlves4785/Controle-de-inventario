@@ -14,17 +14,18 @@ O Gerenciador de Contas é uma aplicação simples desenvolvida em Java para aju
 
 <h3>UML do projeto</h3>
 
+<pre>
 +--------------------------------+
 |           Inventario           |
 +--------------------------------+
 | - produtos: List<Produto>      |
 +--------------------------------+
-| - reescreveId(): int                       |
+| - reescreveId(): int           |
 | + adicionarProduto(produto: Produto): void |
 | + removerProduto(produtoId: int): void     |
-| + listarProdutos(): void                   |
+| + listarProdutos(): void       |
 | + buscarProduto(produtoId: int): Produto   |
-| + calcularValorTotal(): double             |
+| + calcularValorTotal(): double |
 +--------------------------------+
 
                     |
@@ -64,3 +65,4 @@ O Gerenciador de Contas é uma aplicação simples desenvolvida em Java para aju
 | + getDescricao(): String       |
 | + setDescricao(descricao: String): void |
 +--------------------------------+
+</pre>
